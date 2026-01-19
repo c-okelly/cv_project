@@ -1,0 +1,212 @@
+%!TEX TS-program = xelatex
+\documentclass[]{cv-style}
+\usepackage[utf8]{inputenc}
+\usepackage{afterpage}
+\usepackage{hyperref}
+\usepackage{color}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{changepage}
+\usepackage[none]{hyphenat}
+% Set global itemize settings
+\setlist[itemize]{leftmargin=-5pt, labelsep=5pt, itemindent=0pt, label=\textbullet}
+
+
+
+\hypersetup{
+    pdftitle={Conor OKelly - CV},
+    pdfauthor={},
+    pdfsubject={},
+    pdfkeywords={},
+    colorlinks=false,       % no lik border color
+   allbordercolors=white    % white border color for all
+}
+\addbibresource{bibliography.bib}
+\RequirePackage{xcolor} 
+\definecolor{pblue}{HTML}{0395DE}
+
+\begin{document}
+\header{}{Conor O'Kelly}
+%     {Computer Science}
+
+% In the aside, each new line forces a line break
+\begin{aside}
+ \section{Email}
+    {\textbf{okellyconor@gmail.com}}
+    ~
+  \section{Telephone}
+    +353 87 255 3454
+    ~
+  \section{GitHub}
+    \href{https://github.com/c-okelly}{github.com/c-okelly }
+    ~
+ \section{LinkedIn}    
+    \href{https://linkedin.com/in/okellyconor}{linkedin.com/in/okellyconor }
+    ~
+\section{Programming Languages}   
+% 	\textbf{Main}
+	Python, Java, CPP,
+	JavaScript, React Native and Bash
+% 	\textbf{Other}
+% 	R, C (basic), 
+% 	SQl, CSS and HTML 
+    ~
+% \section{Personal interests}  
+%     Cycling
+%     Hiking
+%     Skiing
+    ~
+\end{aside}
+
+\section{Professional Profile}
+
+Seasoned Software Engineer with over seven years of experience in backend development, data engineering, and technical leadership. Proven ability to lead and mentor teams, manage projects, and deliver high-quality software solutions across diverse technologies including C++, Java, Python and JS frameworks such as React. 
+
+Adept at fostering collaborative environments, driving best engineering practices, and optimizing infrastructure for performance and cost efficiency. Seeking to leverage my technical and leadership skills to contribute to a forward-thinking company.
+
+\section{Experience}
+\begin{entrylist}
+\entry
+    {05/22 - Now}
+    {Senior Software Engineer \& Team Lead}
+    % {  Senior Software \& Data Engineer. Team Lead}
+    {Parallel Domain, Vancouver, Canada}
+    {
+    \begin{itemize}
+    \item Worked closely with customer stakeholders to manage projects. This included gathering requirements, writing design documents, assigning tickets and ensuring code was delivered while communicating directly through delivery.
+    \item Projects delivered. All projects listed below were my direct responsibility that I managed.
+    \subitem - Migration of our Data pipeline to new node-based architecture to facilitate the development of new data processing nodes. Completed to meet requirements while ensuring we our existing legacy specifications were meet.
+    \subitem - Delivery of cross organization initiative for minimum testing standards with automated coverage of our core platform. Required extensive collaboration with all company teams to understand our packaging process and integrate our CI pipelines into a single testing job.
+    \subitem - Delivery of a new Machine learning dataset format. This was done in collaboration with our external customers to understand how to best model their annotation and metadata requirements. This was delivered via our Python SDK.
+    \item Led a team of 3 engineers in developing C++ data pipelines for configuring and labeling synthetic data, enhancing ML data customization through clean API interfaces.
+    \item Architected and implemented infrastructure improvements that reduced AWS costs for via by reducing memory and CPU footprints.
+    \item Mentored junior engineers, conducted code reviews, and promoted best practices in software development, testing, and deployment.
+    \item Collaborated with cross-functional teams to align technical solutions with business objectives, resulting in complex feature deliveries.
+    \end{itemize}
+    }
+
+\entry
+    {03/20 - 05/22}
+    {Senior Software Engineer \& Team lead}
+    {Tasktop Technologies, Vancouver, Canada}
+    {
+    \begin{itemize}
+        \item Spearheaded backend Java development projects, focusing on integrating third-party data APIs into the company's data ecosystem for real-time synchronization.
+        \item Designed and implemented scalable architectures that facilitated efficient data retrieval and creation, supporting long-term maintenance and reducing technical debt.
+        \item Led infrastructure initiatives to streamline development workflows, decrease developer friction, and automate common tasks, resulting in [specific outcome, e.g., reduced deployment times, increased developer productivity].
+        \item Served as Scrum Master, orchestrating daily stand-ups, sprint planning, and facilitating communication between engineering and product management teams.
+        % \item Mentored junior engineers and provided technical guidance, fostering a culture of continuous learning and improvement.
+    \end{itemize}
+    }
+ \end{entrylist}
+
+ \begin{entrylist}
+      \entry
+	{04/17 - 9/19} 
+	{Software Engineer}
+	{Murex, Dublin}
+	{
+	\begin{itemize}
+        \item {Developed an ETL pipeline} using Spring Boot and AWS S3 to extract, transform, and load data, enriching existing datasets with internal sources before uploading to AWS S3.
+        \item {Participated in design and architecture discussions}, contributing to the strategic direction and technical solutions of the ETL project.
+        \item {Implemented continuous integration and testing practices}, collaborating closely with the QA team to ensure non-functional requirements (NFRs) were met.
+        \item {Developed full stack features} within a self-organizing agile team, focusing on building and enhancing a new technology stack.
+        \item{Managed build pipelines} through automated testing and continuous deployment, improving development efficiency and reliability.
+        \item {Led a web development club}, organizing sessions to explore and experiment with emerging technologies, fostering a culture of innovation and continuous learning.
+        \item {Collaborated with cross-functional teams}, ensuring seamless integration of front-end and back-end components and enhancing overall product quality.
+        \item {Trained as a Scrum Master and in Scaled Agile Framework (SAFe)}, applying these methodologies to improve team processes and project management.
+    \end{itemize}
+    }
+% 	\\
+ \end{entrylist}
+
+\begin{entrylist}
+
+ \end{entrylist}
+ 
+%  \clearpage
+%  Page break
+
+\section{Education}
+\begin{entrylist}
+ \entry
+ {2018 - 2019}
+ {Postgraduate Diploma in Cyber Security}
+ {National College of Ireland, Ireland}
+ { 
+\textbf{2.1} Second Class Honours \\ 
+ \textbf{Relevant Modules:} \\
+  Network Security and Penetration Testing, Security Fundamentals and IT Law and Ethics in the semester 1. Cryptography, Secure programming for web and malware analysis in semester 2.
+ }
+
+  \entry
+    {2015 - 2017}
+    {Master's Degree in Computer Science}
+    {University College Dublin, Ireland}
+    { \textbf{GPA:}  3.86 // 1st Class Honours \\
+    \textbf {Relevant Modules:}  \\
+    Software Engineering, Data Analytics, Data Structures and Algorithms, Advanced Machine learning, Data analysis in R, Multi-agent system (Multi-agent programming) and Advanced data structures in Java. \\ 
+ 
+  }
+   
+
+  \entry
+    {2010 - 2014}
+    {Bachelor's Degree in Business and Economics}
+    {Trinity College Dublin, Ireland}
+    { \textbf{Result}: 2nd Class Honours Degree \\
+    %  \textbf{Relevant subjects:} Applied Finance, Organisation Theory and Change, Entrepreneurship and New Venture Development, Economics Analysis, Investment Analysis, Industrial Economics, Financial Markets and the Corporate Sector, Economics of Financial Market and Transport Economics.\\
+   }
+ 
+%   \entry
+%     {2003 - 2010}
+%   {Leaving Certificate}
+%     {Clongowes Wood College, Kildare, Ireland}
+%     {Completed secondary education in Ireland - 480 points}
+
+\end{entrylist}
+
+\section{Skills}
+\begin{tabular}{ l l }
+    \textbf{Programming Languages} & C++, Java, Python, JavaScript, Bash \\
+    \textbf{Technologies } & AWS, Docker, Kubernetes, React, Spring Boot \\
+    \textbf{Data Engineering} & Data Pipeline Design, ETL, SQL, NoSQL, \\
+    \textbf{Leadership \& Management} & Team Leadership, Project Management, Mentoring, Technical Strategy \\
+    \textbf{Others} & Machine Learning Integration \\
+    \textbf{Tools} & Git, Jenkins, Jira, Confluence, Terraform \\
+\end{tabular}
+% \section{Technical side projects}
+
+% \begin{itemize}
+
+% \item Run a small open source project that has about 200 users currently. It produces an Add-On for an existing application called Anki that is used for students to study for exams. It enables users to create flash cards for collect exams using Google Docs.
+
+% \item Purchased as 3D printer from China to learn how to 3D printer and design. Have had great fun learning how to tune and build 3D models.
+
+% \item Currently working on a distance sensor for cyclist. The goal of the project is to attempt to estimate the passing distance and possibly speed of vehicles as they overtake cyclists. Partly inspired by the new minimum passing legislation brought into Ireland.
+
+% \item Small amount of open source work as both part of personal interests and professional requirements. Mainly focused on bug fixes.
+
+% \item Managed home network with OpenWrt with a personal VPN. \\ \\
+
+% \end{itemize}
+% \section{Personal Info}
+
+% \textbf{Sports}
+% \begin{itemize}
+% \item Enjoy cycling and hiking.
+% \item Racing in Triathlons during the summer season
+% \item Skiing 
+% \end{itemize}
+
+%\textbf{College work} \\ 
+%Acted as class representative of my MSc class dealing with academic issues throughout the program. \\ \\
+
+
+%\textbf{References available upon request.}
+
+%\begin{flushright}
+%\emph{Conor O'Kelly}
+%\end{flushright}
+
+\end{document}
