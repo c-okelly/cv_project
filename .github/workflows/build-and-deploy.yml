@@ -1,0 +1,64 @@
+name: Build and Deploy CV
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Compile LaTeX document
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: main.tex
+          compiler: xelatex
+          args: "-interaction=nonstopmode -halt-on-error -file-line-error"
+          # Second pass resolves any cross-references (kept for parity with build.sh).
+          post_compile: |
+            xelatex -interaction=nonstopmode -halt-on-error -file-line-error main.tex
+
+      - name: Assemble GitHub Pages site
+        run: |
+          mkdir -p _site
+          cp main.pdf _site/cv.pdf
+          cp site/index.html _site/index.html
+          touch _site/.nojekyll
+
+      - name: Upload CV PDF as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: cv-pdf
+          path: _site/cv.pdf
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

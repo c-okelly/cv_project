@@ -1,2 +1,18 @@
 build/*
 !build/*.pdf
+
+# LaTeX auxiliary files
+*.aux
+*.log
+*.out
+*.bcf
+*.run.xml
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+
+# GitHub Pages build output
+_site/
+site/*.pdf
+
+.DS_Store
