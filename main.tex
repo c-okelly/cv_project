@@ -9,7 +9,8 @@
 \usepackage{changepage}
 \usepackage[none]{hyphenat}
 % Set global itemize settings
-\setlist[itemize]{leftmargin=-5pt, labelsep=5pt, itemindent=0pt, label=\textbullet}
+\setlist[itemize]{leftmargin=-5pt, labelsep=5pt, itemindent=0pt, label=\textbullet, itemsep=1pt, topsep=2pt, parsep=0pt}
+\AtBeginDocument{\geometry{bottom=0.2cm,top=1.4cm,right=1.3cm}}
 
 
 
@@ -45,7 +46,7 @@
     ~
 \section{Programming Languages}   
 % 	\textbf{Main}
-	Python, Java, CPP,
+	Python, Java, Kotlin, CPP,
 	JavaScript, React Native and Bash
 % 	\textbf{Other}
 % 	R, C (basic), 
@@ -58,30 +59,42 @@
     ~
 \end{aside}
 
+\small
 \section{Professional Profile}
 
-Seasoned Software Engineer with over seven years of experience in backend development, data engineering, and technical leadership. Proven ability to lead and mentor teams, manage projects, and deliver high-quality software solutions across diverse technologies including C++, Java, Python and JS frameworks such as React. 
+Seasoned Software Engineer with over nine years of experience in backend development, data engineering, security, and technical leadership. Proven ability to lead and mentor teams, manage projects, and deliver high-quality software solutions across diverse technologies including C++, Java, Python and JS frameworks such as React.
 
-Adept at fostering collaborative environments, driving best engineering practices, and optimizing infrastructure for performance and cost efficiency. Seeking to leverage my technical and leadership skills to contribute to a forward-thinking company.
+Adept at fostering collaborative environments, driving best engineering practices, and optimizing infrastructure for performance and cost efficiency. Currently focused on trust, identity, and fraud prevention at scale.
 
 \section{Experience}
 \begin{entrylist}
 \entry
-    {05/22 - Now}
+    {04/25 - Now}
+    {Staff Software Engineer}
+    {Udemy, Dublin, Ireland}
+    {
+    \begin{itemize}
+    \item Member of Udemy's Trust and Identity team, building secure, reliable systems that ensure safe access and user trust across the platform, from authentication flows to fraud prevention.
+    \item Led a major fraud investigation, coordinating cross-functional efforts to identify and mitigate fraudulent activity at scale on the platform.
+    \item Drove legal integrations for GDPR compliance across our fraud detection systems, ensuring regulatory adherence while maintaining effective fraud prevention capabilities.
+    \item Led multi-engineer projects to address critical technical debt and launch new platform initiatives, improving system reliability and developer velocity.
+    \item Contributed to mentoring and team education efforts, fostering engineering growth and knowledge sharing across the team.
+    \end{itemize}
+    }
+
+\entry
+    {05/22 - 03/25}
     {Senior Software Engineer \& Team Lead}
     % {  Senior Software \& Data Engineer. Team Lead}
     {Parallel Domain, Vancouver, Canada}
     {
     \begin{itemize}
-    \item Worked closely with customer stakeholders to manage projects. This included gathering requirements, writing design documents, assigning tickets and ensuring code was delivered while communicating directly through delivery.
-    \item Projects delivered. All projects listed below were my direct responsibility that I managed.
-    \subitem - Migration of our Data pipeline to new node-based architecture to facilitate the development of new data processing nodes. Completed to meet requirements while ensuring we our existing legacy specifications were meet.
-    \subitem - Delivery of cross organization initiative for minimum testing standards with automated coverage of our core platform. Required extensive collaboration with all company teams to understand our packaging process and integrate our CI pipelines into a single testing job.
-    \subitem - Delivery of a new Machine learning dataset format. This was done in collaboration with our external customers to understand how to best model their annotation and metadata requirements. This was delivered via our Python SDK.
-    \item Led a team of 3 engineers in developing C++ data pipelines for configuring and labeling synthetic data, enhancing ML data customization through clean API interfaces.
-    \item Architected and implemented infrastructure improvements that reduced AWS costs for via by reducing memory and CPU footprints.
-    \item Mentored junior engineers, conducted code reviews, and promoted best practices in software development, testing, and deployment.
-    \item Collaborated with cross-functional teams to align technical solutions with business objectives, resulting in complex feature deliveries.
+    \item Partnered closely with ML teams on data streaming and ingestion, building efficient network pipelines and processes to reduce latency for high-throughput systems.
+    \item Used gRPC in live video game streaming pipelines that fed LLM training and verification systems.
+    \item Worked closely with customer stakeholders on delivery: requirements, design documents, tickets, and communication through to handoff.
+    \item Led a team of 3 engineers on C++ data pipelines for configuring and labeling synthetic data, with clean APIs for ML-driven customization.
+    \item Owned cross-team delivery: node-based pipeline migration, minimum testing standards with unified CI, and customer-facing ML dataset formats via the Python SDK.
+    \item Architected infrastructure improvements that reduced AWS cost by lowering memory and CPU footprint; collaborated with cross-functional teams to align technical solutions with business objectives; mentored engineers and promoted strong development, testing, and deployment practices.
     \end{itemize}
     }
 
@@ -93,9 +106,9 @@ Adept at fostering collaborative environments, driving best engineering practice
     \begin{itemize}
         \item Spearheaded backend Java development projects, focusing on integrating third-party data APIs into the company's data ecosystem for real-time synchronization.
         \item Designed and implemented scalable architectures that facilitated efficient data retrieval and creation, supporting long-term maintenance and reducing technical debt.
-        \item Led infrastructure initiatives to streamline development workflows, decrease developer friction, and automate common tasks, resulting in [specific outcome, e.g., reduced deployment times, increased developer productivity].
+        \item Led infrastructure initiatives to streamline development workflows, decrease developer friction, and automate common tasks.
         \item Served as Scrum Master, orchestrating daily stand-ups, sprint planning, and facilitating communication between engineering and product management teams.
-        % \item Mentored junior engineers and provided technical guidance, fostering a culture of continuous learning and improvement.
+        \item Mentored junior engineers and provided technical guidance, fostering a culture of continuous learning and improvement.
     \end{itemize}
     }
  \end{entrylist}
@@ -120,10 +133,6 @@ Adept at fostering collaborative environments, driving best engineering practice
 % 	\\
  \end{entrylist}
 
-\begin{entrylist}
-
- \end{entrylist}
- 
 %  \clearpage
 %  Page break
 
@@ -135,19 +144,14 @@ Adept at fostering collaborative environments, driving best engineering practice
  {National College of Ireland, Ireland}
  { 
 \textbf{2.1} Second Class Honours \\ 
- \textbf{Relevant Modules:} \\
-  Network Security and Penetration Testing, Security Fundamentals and IT Law and Ethics in the semester 1. Cryptography, Secure programming for web and malware analysis in semester 2.
+ \textbf{Relevant modules:} Network security, IT law \& ethics, cryptography, secure web programming, malware analysis.
  }
 
   \entry
     {2015 - 2017}
     {Master's Degree in Computer Science}
     {University College Dublin, Ireland}
-    { \textbf{GPA:}  3.86 // 1st Class Honours \\
-    \textbf {Relevant Modules:}  \\
-    Software Engineering, Data Analytics, Data Structures and Algorithms, Advanced Machine learning, Data analysis in R, Multi-agent system (Multi-agent programming) and Advanced data structures in Java. \\ 
- 
-  }
+    { \textbf{GPA:} 3.86 (1st Class Honours). \textbf{Modules:} software engineering, data analytics, algorithms, ML, multi-agent systems, advanced Java. }
    
 
   \entry
@@ -168,9 +172,9 @@ Adept at fostering collaborative environments, driving best engineering practice
 
 \section{Skills}
 \begin{tabular}{ l l }
-    \textbf{Programming Languages} & C++, Java, Python, JavaScript, Bash \\
+    \textbf{Programming Languages} & C++, Java, Kotlin, Python, JavaScript, Bash \\
     \textbf{Technologies } & AWS, Docker, Kubernetes, React, Spring Boot \\
-    \textbf{Data Engineering} & Data Pipeline Design, ETL, SQL, NoSQL, \\
+    \textbf{Data Engineering} & Data Pipeline Design, ETL, SQL, NoSQL, DynamoDB \\
     \textbf{Leadership \& Management} & Team Leadership, Project Management, Mentoring, Technical Strategy \\
     \textbf{Others} & Machine Learning Integration \\
     \textbf{Tools} & Git, Jenkins, Jira, Confluence, Terraform \\
